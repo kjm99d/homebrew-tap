@@ -5,21 +5,21 @@
 class MonkeyPlanner < Formula
   desc "Local-first task memory for your AI coding agents. MCP server for Claude Code, Cursor, and Continue."
   homepage "https://github.com/kjm99d/MonkeyPlanner"
-  version "1.4.1"
+  version "1.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kjm99d/MonkeyPlanner/releases/download/v1.4.1/monkey-planner_1.4.1_macOS_amd64.tar.gz"
-      sha256 "c88aff1c228da9d077c7f28e70f37d7edc19559a53e621dbe3edfcfee1fc7468"
+      url "https://github.com/kjm99d/MonkeyPlanner/releases/download/v1.4.2/monkey-planner_1.4.2_macOS_amd64.tar.gz"
+      sha256 "d64c0951cd6a6b2b5a524c535b156ee94e823d7d10706a3aab5f063abdcaf402"
 
       define_method(:install) do
         bin.install "monkey-planner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kjm99d/MonkeyPlanner/releases/download/v1.4.1/monkey-planner_1.4.1_macOS_arm64.tar.gz"
-      sha256 "f84d4cf173e1bbe639c058ba834c7cf772129d29cf42a76c981669e6349c5bc2"
+      url "https://github.com/kjm99d/MonkeyPlanner/releases/download/v1.4.2/monkey-planner_1.4.2_macOS_arm64.tar.gz"
+      sha256 "d4735e1060c257b495a64d218af767df387b6619f5b4f3bbf53d0f1a40740294"
 
       define_method(:install) do
         bin.install "monkey-planner"
@@ -29,15 +29,15 @@ class MonkeyPlanner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kjm99d/MonkeyPlanner/releases/download/v1.4.1/monkey-planner_1.4.1_linux_amd64.tar.gz"
-      sha256 "55e33e4b2a945eabdcddd03418766be12bd8c31f1e61744e92ae476859d67ba4"
+      url "https://github.com/kjm99d/MonkeyPlanner/releases/download/v1.4.2/monkey-planner_1.4.2_linux_amd64.tar.gz"
+      sha256 "401cf8a4812411cfac48c4a5d32bb4c8910a61187b2b42acbe4940aca8d79e18"
       define_method(:install) do
         bin.install "monkey-planner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kjm99d/MonkeyPlanner/releases/download/v1.4.1/monkey-planner_1.4.1_linux_arm64.tar.gz"
-      sha256 "d8d2d75ffc4d1156aaf5bc48b42c1929e19d848b7bb3f8d957910bb4a1a406ca"
+      url "https://github.com/kjm99d/MonkeyPlanner/releases/download/v1.4.2/monkey-planner_1.4.2_linux_arm64.tar.gz"
+      sha256 "ec2d777695216b076fa955d80571445904726c716db5492d5dd3f1cc54c19897"
       define_method(:install) do
         bin.install "monkey-planner"
       end
